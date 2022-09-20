@@ -13,10 +13,6 @@ li {
     list-style-type: none;
 }
 
-
-
-
-
 /* COMMON STYLING STARTS HERE*/
 
 /* containers */
@@ -274,12 +270,8 @@ li {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 32px;
 }
 
-.navigation-links {
-    margin: 32px 0 0 0;
-}
 
 .last-link {
     margin-right: 0;
@@ -292,16 +284,21 @@ li {
 /* banner part */
 
 .banner {
-    margin-top: 230px;
+    height:100vh;
 }
 
+.banner-text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
 
 
 
 
 /* about us part */
 .about-us {
-    margin-top: 260px;
     font-size: 0;
 }
 
@@ -362,7 +359,6 @@ li {
 
 
 
-/* circle */
 .circle {
     background-color: white;
     width: 15px;
@@ -379,6 +375,63 @@ li {
     border: 4px solid #d4d4d4;
 }
 
+.circle::before,.circle::after{
+    content: "";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.73;
+    letter-spacing: 1px;  
+}
+
+
+.circle::before{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -65px;
+}
+
+.circle::after{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 40px;
+    width:170px;
+    text-align: left;
+    color: #141720;
+    font-weight:600;
+}
+
+
+.circle-first::before{
+    content: "2003";
+    color: #c71222;
+}
+.circle-first::after{
+    content: "started";
+}
+
+
+.circle-second::before{
+    content: "2006";  
+}
+.circle-second::after{
+    content: "Important Date One";
+}
+
+.circle-third::before{
+    content: "2010";  
+}
+.circle-third::after{
+    content: "Important Date Two";
+}
+
+.circle-fourth::before{
+    content: "2016";  
+}
+.circle-fourth::after{
+    content: "Current Time";
+}
 
 
 
@@ -389,7 +442,7 @@ li {
     height: 520px;
     position: absolute;
     top: -140px;
-    left: 230px;
+    left: 305px;
     z-index: -1;
     border: none;
 }
@@ -454,18 +507,18 @@ li {
 /* Contact Us  */
 
 .contact-us-left {
-    padding-left: 80px;
-    padding-right: 50px;
+    box-sizing: border-box;
+    padding:120px 50px 40px 80px;
 }
 
 .contact-form {
-    margin-top: 35px;
+    margin-top: 15px;
     width: 450px;
 }
 
 .input-field {
     background: transparent;
-    padding: 8px 0;
+    padding: 10px 0 15px 0;
     width: 450px;
     margin-top: 40px;
     color: white;
@@ -478,13 +531,15 @@ li {
 
 .input-field::placeholder {
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 .input-field:focus{
     outline: none;
 }
 
 .btn-contact {
-    margin-top: 110px
+    margin-top: 110px;
+    margin-right:0 ;
 }
 
 .contact-us-right {

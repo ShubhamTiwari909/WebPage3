@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header class="container-lg clearfix">
+    <header class="container-lg clearfix" style="margin-top: 32px">
       <div class="logo float-left">
         <a
           href="javascript:void(0)"
@@ -59,12 +59,14 @@
 
     <main>
       <section class="banner">
-        <h1 class="heading-lg primary-black-text text-center">
-          WELCOME TO FREE SKETCH TEMPLATE
-        </h1>
-        <h2 class="heading-md primary-grey-text text-center">
-          Habitasse vestibulum a mi odio ut rutrum mauris leo lorem
-        </h2>
+        <div class="banner-text">
+          <h1 class="heading-lg primary-black-text text-center">
+            WELCOME TO FREE SKETCH TEMPLATE
+          </h1>
+          <h2 class="heading-md primary-grey-text text-center">
+            Habitasse vestibulum a mi odio ut rutrum mauris leo lorem
+          </h2>
+        </div>
       </section>
 
       <section class="about-us clearfix">
@@ -90,72 +92,40 @@
       <section class="timeline clearfix">
         <ul class="float-left half-width timeline-left">
           <!-- first -->
-          <li class="container-xsm" style="margin-left:162px;">
-            <p
-              class="text-sm primary-red-text display-inline-block timeline-element-text timeline-quote"
-            >
-              2003
-            </p>
-            <div
-              class="circle circle-red display-inline-block timeline-element-text"
-            ></div>
-  
-            <p
-              class="display-inline-block text-sm primary-black-text timeline-element-text"
-            >
-              Started
-            </p>
+          <li class="container-xsm text-center" style="margin-left: 162px">
+            <span
+              class="circle circle-red circle-first display-inline-block"
+            ></span>
           </li>
-  
+
           <!-- second -->
-          <li class="container-xsm timeline-element timeline-element-two" style="margin-left:162px;">
-            <p
-              class="text-sm primary-grey-text display-inline-block timeline-element-text timeline-quote"
-            >
-              2006
-            </p>
-            <div
-              class="circle circle-grey display-inline-block timeline-element-text"
-            ></div>
-            <p
-              class="display-inline-block text-sm primary-black-text timeline-element-text"
-            >
-              Important Date one
-            </p>
+          <li
+            class="container-xsm text-center timeline-element-two"
+            style="margin-left: 162px"
+          >
+            <span
+              class="circle circle-grey circle-second display-inline-block"
+            ></span>
           </li>
-  
+
           <!-- third -->
-          <li class="container-xsm timeline-element timeline-element-three" style="margin-left:162px;">
-            <p
-              class="text-sm primary-grey-text display-inline-block timeline-element-text timeline-quote"
-            >
-              2010
-            </p>
-            <div
-              class="circle circle-grey display-inline-block timeline-element-text"
-            ></div>
-            <p
-              class="display-inline-block text-sm primary-black-text timeline-element-text"
-            >
-              Important Date Two
-            </p>
+          <li
+            class="container-xsm text-center timeline-element-three"
+            style="margin-left: 162px"
+          >
+            <span
+              class="circle circle-grey circle-third display-inline-block"
+            ></span>
           </li>
-  
+
           <!-- fourth -->
-          <li class="container-xsm timeline-element timeline-element-four" style="margin-left:162px;">
-            <p
-              class="text-sm primary-grey-text display-inline-block timeline-element-text timeline-quote"
-            >
-              2016
-            </p>
-            <div
-              class="circle circle-grey display-inline-block timeline-element-text"
-            ></div>
-            <p
-              class="display-inline-block text-sm primary-black-text timeline-element-text"
-            >
-              Current Time
-            </p>
+          <li
+            class="container-xsm text-center timeline-element-four"
+            style="margin-left: 162px"
+          >
+            <span
+              class="circle circle-grey circle-fourth display-inline-block"
+            ></span>
           </li>
           <li>
             <hr class="straight-line bg-secondary-grey" />
@@ -170,13 +140,12 @@
             convallis himenaeos felis torquent facilisi elementum a penatibus
             suscipit aliquam.<br />
             <br />
-            Porta at at suspendisse dolor fames ullamcorper cum id per suspendisse
-            a dignissim eu dapibus platea turpis augue mi proin lorem morbi sapien
-            facilisis lectus.
+            Porta at at suspendisse dolor fames ullamcorper cum id per
+            suspendisse a dignissim eu dapibus platea turpis augue mi proin
+            lorem morbi sapien facilisis lectus.
           </p>
         </div>
       </section>
-
       <!-- Services -->
       <section class="service-section bg-light-grey">
         <h1 class="title-lg primary-black-text text-center">Our Services</h1>
@@ -325,7 +294,7 @@
       <!-- Contact Us -->
       <section class="clearfix">
         <div
-          class="float-left bg-primary-black half-width paragraph-padding contact-us-left"
+          class="float-left bg-primary-black half-width contact-us-left"
         >
           <h3 class="text-white title-lg">Contact Us</h3>
 
@@ -337,17 +306,16 @@
             />
             <input
               class="input-field border-bottom-white"
-              type="text"
+              type="email"
               placeholder="Email"
             />
-            <input
+            <textarea
               class="input-field border-bottom-white"
-              type="text"
               placeholder="Message"
-            />
+            ></textarea>
             <a
               href="javascript:void(0)"
-              class="btn nav-link bg-primary-red btn-contact text-white float-right text-decoration-none"
+              class="btn btn-contact nav-link bg-primary-red text-white float-right text-decoration-none"
             >
               Contact Us
             </a>
