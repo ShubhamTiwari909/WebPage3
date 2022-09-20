@@ -153,7 +153,11 @@ li {
     letter-spacing: 0.5px;
 }
 
-
+/* active links */
+.nav-link:active{
+    font-weight: bold;
+    color: black;
+}
 
 
 
@@ -238,6 +242,7 @@ li {
     box-sizing: border-box;
     padding: 125px 80px 241px 103px;
 }
+
 
 
 
