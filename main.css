@@ -1,15 +1,50 @@
+/* Importing the fonts from google fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200;300;400&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
+
+
+
+/* Tags styling */
 li {
     list-style-type: none;
 }
 
-/* common styling starts here*/
-/* texts */
+
+
+
+
+/* COMMON STYLING STARTS HERE*/
+
+/* containers */
+.container-lg {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container-md {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container-sm {
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+.container-xsm {
+    width: 290px;
+    margin: 0 auto;
+}
+
+
+
+
+/* text colors */
 .text-white {
     color: white;
 }
@@ -35,7 +70,10 @@ li {
 }
 
 
-/* backgrounds */
+
+
+
+/* backgrounds colors */
 .bg-white {
     background-color: white;
 }
@@ -59,9 +97,13 @@ li {
 .bg-secondary-grey {
     background-color: #d4d4d4;
 }
+
 .bg-light-grey {
     background-color: #efefef
 }
+
+
+
 
 
 /* floats */
@@ -73,12 +115,20 @@ li {
     float: right;
 }
 
+
+
+
+
 /* display */
 .display-inline-block {
     display: inline-block;
 }
 
-/* text-align */
+
+
+
+
+/* text-align and decoration */
 .text-left {
     text-align: left;
 }
@@ -92,17 +142,9 @@ li {
 }
 
 
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 32px;
-}
 
-.navigation-links {
-    margin: 32px 0 0 0;
-}
 
+/* nav links */
 .nav-link {
     margin: 1.5px 30px 0 0;
     font-family: 'Montserrat', sans-serif;
@@ -111,6 +153,11 @@ li {
     letter-spacing: 0.5px;
 }
 
+
+
+
+
+/* headings */
 .heading-lg {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
@@ -124,7 +171,13 @@ li {
     letter-spacing: 0.5px;
 }
 
-.title-lg,.title-md  {
+
+
+
+
+/* title */
+.title-lg,
+.title-md {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -136,6 +189,13 @@ li {
     font-size: 20px;
 }
 
+
+
+
+
+
+
+/* text sizes */
 .text-lg {
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
@@ -150,6 +210,11 @@ li {
     letter-spacing: 1px;
 }
 
+
+
+
+
+/* button */
 .btn {
     padding: 18px 49px;
     border-radius: 100px;
@@ -158,36 +223,24 @@ li {
 
 
 
-.container-lg {
-    width: 1200px;
-    margin: 0 auto;
-}
 
-.container-md {
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.container-sm {
-    width: 600px;
-    margin: 0 auto;
-}
-
-
-.container-xsm {
-    width: 290px;
-    margin: 0 auto;
-}
-
-.half-width{
+/* 50% Widths */
+.half-width {
     width: calc((100% / 2));
     height: 600px;
 }
 
+
+
+
+/* paragraph paddings */
 .paragraph-padding {
     box-sizing: border-box;
-    padding: 125px 80px 200px 103px;
+    padding: 125px 80px 241px 103px;
 }
+
+
+
 
 /* clear fix */
 .clearfix:before,
@@ -200,15 +253,35 @@ li {
     clear: both;
 }
 
-/* clear fix ends */
-/* common styling end here */
+/* COMMON STYLING ENDS HERE */
 
-/* Separate Stylings  */
+
+
+
+
+
+
+
+/* SEPERATE STYLING STARTS HERE*/
+
 /* header part */
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.navigation-links {
+    margin: 32px 0 0 0;
+}
 
 .last-link {
     margin-right: 0;
 }
+
+
+
 
 
 /* banner part */
@@ -216,6 +289,8 @@ li {
 .banner {
     margin-top: 230px;
 }
+
+
 
 
 
@@ -237,13 +312,14 @@ li {
 
 
 
+
+
 /* timeline part */
 
 .timeline {
     margin-top: 140px;
     position: relative;
 }
-
 
 .timeline-element-two {
     margin-top: 61px
@@ -261,8 +337,27 @@ li {
     margin-top: 55px
 }
 
+.timeline-element-text {
+    margin-right: 14px;
+}
+
+.timeline-element-text:nth-child(3) {
+    margin-right: 0;
+}
+
+.timeline-right {
+    padding-top: 0;
+}
+
+.timeline-quote {
+    width: 41px;
+}
 
 
+
+
+
+/* circle */
 .circle {
     background-color: white;
     width: 15px;
@@ -279,22 +374,9 @@ li {
     border: 4px solid #d4d4d4;
 }
 
-.timeline-element-text {
-    margin-right: 14px;
-}
-
-.timeline-element-text:nth-child(3) {
-    margin-right: 0;
-}
 
 
-.timeline-right{
- padding-top: 0;
-}
 
-.timeline-quote{
-    width:41px;
-}
 
 /* straight line */
 .straight-line {
@@ -304,87 +386,99 @@ li {
     top: -23.3%;
     left: 19.3%;
     z-index: -1;
-    border:none;
+    border: none;
 }
+
+
 
 
 
 /* Services */
 .service-section {
-    margin-top:50px;
-    padding:150px 0;
-}
-.services{
-    margin-top:85px;
-}
-.service{
-    width:calc((100% - 90px) /3 );
-    display:inline-block;
+    margin-top: 50px;
+    padding: 150px 0;
 }
 
-.service-one,.service-two{
+.services {
+    margin-top: 85px;
+}
+
+.service {
+    width: calc((100% - 90px) /3);
+    display: inline-block;
+}
+
+.service-one,
+.service-two {
     margin-right: 40px;
 }
 
-.service-text{
+.service-text {
     margin-top: 20px;
 }
-.service-paragraph{
-    margin-top:16px;
+
+.service-paragraph {
+    margin-top: 16px;
 }
 
-.service-image{
-    width: 40px; height: 40px
+.service-image {
+    width: 40px;
+    height: 40px
 }
+
+
 
 
 
 /* Hiring */
-.hire-left{
+.hire-left {
     background-image: url("https://dl.dropboxusercontent.com/s/e5a8o5yu4n825aw/bitmap2.png?dl=0");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 
-.hire-paragraph{
-    margin-top:55px;
+.hire-paragraph {
+    margin-top: 55px;
 }
+
+
+
 
 
 /* Contact Us  */
 
-.contact-us-left{
-padding-left:80px;
-padding-right: 50px;    
+.contact-us-left {
+    padding-left: 80px;
+    padding-right: 50px;
 }
 
-.contact-form{
-    margin-top:35px;
-    width:450px;
+.contact-form {
+    margin-top: 35px;
+    width: 450px;
 }
 
-.input-field{
-    background:transparent;
-    padding:8px 0;
-    width:450px;
+.input-field {
+    background: transparent;
+    padding: 8px 0;
+    width: 450px;
     margin-top: 40px;
 }
 
-.border-bottom-white{
+.border-bottom-white {
     border: none;
     border-bottom: 1px solid white;
 }
 
-.input-field::placeholder{
-    color:white;
+.input-field::placeholder {
+    color: white;
 }
 
-.btn-contact{
-    margin-top:110px
+.btn-contact {
+    margin-top: 110px
 }
 
-.contact-us-right{
+.contact-us-right {
     background-image: url("https://dl.dropboxusercontent.com/s/qwp7w9g2sptopch/pin.png?dl=0");
     background-repeat: no-repeat;
     background-size: 100% 100%;
