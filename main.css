@@ -305,7 +305,7 @@ li {
 .about-us-right {
     background-image: url("https://dl.dropboxusercontent.com/s/uwk69d661gnfn3f/bitmap.png?dl=0");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover
 }
 
 .about-us-paragraph {
@@ -492,7 +492,7 @@ li {
 .hire-left {
     background-image: url("https://dl.dropboxusercontent.com/s/e5a8o5yu4n825aw/bitmap2.png?dl=0");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover
 }
 
 
@@ -545,5 +545,5 @@ li {
 .contact-us-right {
     background-image: url("https://dl.dropboxusercontent.com/s/qwp7w9g2sptopch/pin.png?dl=0");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover
 }
