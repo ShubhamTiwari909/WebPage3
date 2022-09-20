@@ -463,6 +463,7 @@ li {
     padding: 8px 0;
     width: 450px;
     margin-top: 40px;
+    color: white;
 }
 
 .border-bottom-white {
@@ -472,6 +473,9 @@ li {
 
 .input-field::placeholder {
     color: white;
+}
+.input-field:focus{
+    outline: none;
 }
 
 .btn-contact {
