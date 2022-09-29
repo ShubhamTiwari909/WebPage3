@@ -266,6 +266,9 @@ li {
 /* SEPERATE STYLING STARTS HERE*/
 
 /* header part */
+.header{
+    margin-top:32px;
+}
 .logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -346,6 +349,10 @@ li {
 
 .timeline-element-text:nth-child(3) {
     margin-right: 0;
+}
+
+.timeline-element{
+    margin-left:162px;
 }
 
 .timeline-right {
